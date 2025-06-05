@@ -1,19 +1,22 @@
+import Header from './components/Header'
 import HeroSection from './components/HeroSection';
-import ServicesSection from './components/ServiceSection';
 import AboutSection from './components/AboutSection';
-import AreasSection from './components/AreasSection';
-import TestimonialsSection from './components/TestimonialCarousel';
-import ContactSection from './components/ContactSection';
+// import ServicesSection from './components/ServiceSection';
+import AreasAtendidas from './components/AreasSection';
+import CoverageMap from './components/CoverageMap';
+import { Contact } from './components/Contact';
+import BrazilianMap from './components/BrazilianMap'
 
 export default function Home() {
   return (
     <>
       <HeroSection />
       <AboutSection />
-      <ServicesSection />
-      <AreasSection />
-      <TestimonialsSection />
-      <ContactSection />
+      {/* <ServicesSection /> */}
+      <BrazilianMap />
+      {/* <AreasAtendidas /> */}
+      {/* <CoverageMap /> */}
+      <Contact />
     </>
   );
 }

@@ -1,6 +1,6 @@
 import './globals.css';
 import Header from './components/Header';
-import Footer from './components/Footer';
+// import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import { Metadata } from 'next';
 
@@ -125,7 +125,7 @@ export default function RootLayout({
         <main role="main">
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
         <WhatsAppButton />
         
         <script
