@@ -1,6 +1,4 @@
 import './globals.css';
-import Header from './components/Header';
-// import Footer from './components/Footer';
 import WhatsAppButton from './components/WhatsAppButton';
 import { Metadata } from 'next';
 
@@ -8,7 +6,7 @@ export const metadata: Metadata = {
   title: 'GETAF Mudanças | Mudanças Residenciais, Comerciais e Içamentos em BH e Brasil',
   description: 'GETAF Mudanças: Mais de 10 anos de experiência em mudanças residenciais, comerciais e interestaduais. Serviços de içamento em Belo Horizonte e 12 estados do Brasil. Orçamento grátis!',
   keywords: 'mudanças BH, mudanças Belo Horizonte, mudanças residenciais, mudanças comerciais, mudanças interestaduais, içamentos, transportes, GETAF,mudancas BH, mudancas Belo Horizonte, mudancas residenciais, mudancas comerciais, mudancas interestaduais, icamentos, içamentos bh',
-  authors: [{ name: 'GETAF Mudanças' }],
+  authors: [{ name: 'GETAF Mudanças e Içamentos BH' }],
   creator: 'GETAF Mudanças',
   publisher: 'GETAF Mudanças',
   robots: 'index, follow',
@@ -55,6 +53,7 @@ export default function RootLayout({
         
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="icon" href="/getaf.png" type="image/png" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <link rel="manifest" href="/manifest.json" />
         
@@ -70,7 +69,7 @@ export default function RootLayout({
               "name": "GETAF Mudanças",
               "description": "Empresa especializada em mudanças residenciais, comerciais e interestaduais com mais de 10 anos de experiência.",
               "url": "https://getafmudancas.com.br",
-              "logo": "https://getafmudancas.com.br/logo.png",
+              "logo": "/logo.png",
               "image": "https://getafmudancas.com.br/og-image.jpg",
               "telephone": "+55-31-98645-3365",
               "address": {
@@ -121,11 +120,9 @@ export default function RootLayout({
         />
       </head>
       <body className="antialiased">
-        <Header />
         <main role="main">
           {children}
         </main>
-        {/* <Footer /> */}
         <WhatsAppButton />
         
         <script

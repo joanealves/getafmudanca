@@ -7,7 +7,7 @@ export default function About() {
     {
       icon: Shield,
       title: 'Segurança',
-      description: 'Proteção máxima para seus bens com seguro adicional e equipamentos de qualidade.'
+      description: 'Proteção máxima para seus bens com equipamentos de qualidade.'
     },
     {
       icon: Heart,
@@ -28,37 +28,16 @@ export default function About() {
 
   const stats = [
     { number: '10+', label: 'Anos de Experiência', icon: Award },
-    { number: '12', label: 'Estados Atendidos', icon: Truck },
+    { number: '12+', label: 'Estados Atendidos', icon: Truck },
     { number: '1000+', label: 'Mudanças Realizadas', icon: CheckCircle },
-    { number: '4.8', label: 'Avaliação Média', icon: Star }
+    { number: '5.0', label: 'Avaliação Máxima', icon: Star }
   ];
 
-  const testimonials = [
-    {
-      name: 'Maria Silva',
-      city: 'Belo Horizonte - MG',
-      rating: 5,
-      text: 'Excelente serviço! A equipe foi muito cuidadosa com meus móveis e cumpriu o prazo prometido. Recomendo!'
-    },
-    {
-      name: 'João Santos',
-      city: 'São Paulo - SP',
-      rating: 5,
-      text: 'Mudança interestadual perfeita. Profissionais competentes e preço justo. Superou minhas expectativas.'
-    },
-    {
-      name: 'Ana Costa',
-      city: 'Rio de Janeiro - RJ',
-      rating: 5,
-      text: 'Precisei de um içamento complexo e a GETAF resolveu sem problemas. Equipe muito técnica e preparada.'
-    }
-  ];
 
   return (
     <section id="sobre" className="py-20 bg-gradient-to-br from-white to-slate-50">
       <div className="container mx-auto px-4">
         
-        {/* Header */}
         <div className="text-center mb-16 animate-fade-in">
           <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium mb-4">
             <Users className="h-4 w-4" />
@@ -76,11 +55,10 @@ export default function About() {
 
         <div className="grid lg:grid-cols-2 gap-12 items-center mb-20">
           
-          {/* Content */}
           <div className="space-y-6 animate-slide-up">
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-6">
-                A <strong className="text-blue-600">GETAF Mudanças</strong> realiza mudanças residenciais há mais de 10 anos e possui vasta experiência no mercado. Acreditamos que o serviço de mudança vai muito além de transportar objetos - <strong>a tranquilidade do cliente está no topo de nossa prioridade</strong>.
+                A <strong className="text-blue-600">GETAF Mudanças</strong> realiza mudanças e içamentos, há mais de 10 anos e possui vasta experiência no mercado. Acreditamos que o serviço de mudança vai muito além de transportar objetos - <strong>a tranquilidade do cliente está no topo de nossa prioridade</strong>.
               </p>
               
               <p className="text-slate-700 leading-relaxed mb-6">
@@ -96,7 +74,6 @@ export default function About() {
               </p>
             </div>
 
-            {/* Guarantees */}
             <div className="bg-blue-50 rounded-2xl p-6 border border-blue-100">
               <h3 className="text-xl font-bold text-slate-900 mb-4">Nossos Compromissos</h3>
               <div className="space-y-3">
@@ -116,7 +93,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Stats */}
           <div className="space-y-8 animate-fade-in">
             <div className="grid grid-cols-2 gap-6">
               {stats.map((stat, index) => {
@@ -138,37 +114,6 @@ export default function About() {
             </div>
 
             
-          </div>
-        </div>
-
-       
-
-        {/* CTA */}
-        <div className="text-center">
-          <div className="bg-gradient-to-r from-emerald-500 to-emerald-600 rounded-3xl p-8 md:p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              Faça parte da nossa história de sucesso
-            </h3>
-            <p className="text-emerald-100 mb-8 max-w-2xl mx-auto text-lg">
-              Junte-se aos milhares de clientes satisfeitos que confiaram na GETAF 
-              para tornar sua mudança uma experiência tranquila e segura.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <button 
-                onClick={() => document.getElementById('form-orcamento')?.scrollIntoView({ behavior: 'smooth' })}
-                className="bg-white text-emerald-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-emerald-50 transition-colors"
-              >
-                Solicitar Orçamento Gratuito
-              </button>
-              <a 
-                href="https://wa.me/5531986453365" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="bg-emerald-700 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:bg-emerald-800 transition-colors border-2 border-emerald-700 hover:border-emerald-800"
-              >
-                Conversar no WhatsApp
-              </a>
-            </div>
           </div>
         </div>
       </div>
