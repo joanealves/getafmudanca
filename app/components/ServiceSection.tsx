@@ -5,7 +5,7 @@ const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      icon: <Truck className="w-12 h-12 text-blue-600" />,
+      icon: <Truck className="w-12 h-12 text-blue-800" />,
       title: "Mudanças Residenciais",
       description: "A GETAF realiza mudanças residenciais a mais de 10 anos e possui vasta experiência. Acreditamos que o serviço de mudança vai muito além do que transportar objetos. A tranquilidade do cliente está no topo de nossa prioridade.",
       features: ["Embalagem profissional", "Desmontagem e montagem", "Transporte seguro", "Equipe especializada"],
@@ -13,7 +13,7 @@ const ServicesSection = () => {
     },
     {
       id: 2,
-      icon: <Building2 className="w-12 h-12 text-blue-600" />,
+      icon: <Building2 className="w-12 h-12 text-blue-800" />,
       title: "Mudanças Comerciais",
       description: "A GETAF também atua com mudanças comerciais, transportando com maestria e agilidade objetos de empresas que não podem perder tempo com mudança. Com a GETAF o momento da mudança da sua empresa pode deixar de ser uma dor de cabeça.",
       features: ["Planejamento estratégico", "Execução rápida", "Mínimo downtime", "Logística especializada"],
@@ -21,7 +21,7 @@ const ServicesSection = () => {
     },
     {
       id: 3,
-      icon: <MapPin className="w-12 h-12 text-blue-600" />,
+      icon: <MapPin className="w-12 h-12 text-blue-800" />,
       title: "Mudanças Interestaduais",
       description: "Está precisando transportar sua carga pelo Brasil? A GETAF também pode te atender! Realizamos mudanças para 12 estados brasileiros com total segurança e agilidade.",
       features: ["Cobertura nacional", "12 estados atendidos", "Rastreamento completo", "Seguro incluso"],
@@ -29,7 +29,7 @@ const ServicesSection = () => {
     },
     {
       id: 4,
-      icon: <Settings className="w-12 h-12 text-blue-600" />,
+      icon: <Settings className="w-12 h-12 text-blue-800" />,
       title: "Içamentos",
       description: "Preocupado com objetos que são difíceis de transportar? A GETAF também atua com içamentos, possibilitando a remoção de qualquer objeto, em qualquer lugar. Com a GETAF sua mudança acontece!",
       features: ["Equipamentos especializados", "Objetos pesados", "Acesso difícil", "Segurança total"],
@@ -41,7 +41,7 @@ const ServicesSection = () => {
     <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
       <div className="container max-w-7xl mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-blue-900 mb-6">
             Serviços
           </h2>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -71,7 +71,7 @@ const ServicesSection = () => {
               <div className="lg:w-1/2 space-y-6">
                 <div className="flex items-center gap-4">
                   {service.icon}
-                  <h3 className="text-3xl font-bold text-gray-900">
+                  <h3 className="text-3xl font-bold text-blue-800"> 
                     {service.title}
                   </h3>
                 </div>
@@ -109,10 +109,7 @@ const ServicesSection = () => {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
-              Solicitar Orçamento
-            </button>
-            <button className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors">
-              Falar no WhatsApp
+              Vamos Coversar ?
             </button>
           </div>
         </div>

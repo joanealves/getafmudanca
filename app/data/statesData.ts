@@ -35,7 +35,6 @@ export const statesData: State[] = [
   { name: 'Sergipe', code: 'SE', capital: 'Aracaju' },
 ];
 
-// Estados com maior volume de viagens (onde fazem mais viagens)
 export const servedStatesData: State[] = [
   { name: 'Minas Gerais', code: 'MG', capital: 'Belo Horizonte' },
   { name: 'São Paulo', code: 'SP', capital: 'São Paulo' },

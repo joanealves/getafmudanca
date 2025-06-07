@@ -105,48 +105,20 @@ Tipo: ${formData.tipo}`;
                   GETAF
                 </span>
                 <br />
-                <span className="text-2xl sm:text-3xl lg:text-4xl font-normal text-blue-200">
-                  Mudanças
+                <span className="text-2xl sm:text-3xl lg:text-4xl font-normal text-white">
+                   GETAF MUDANÇAS
                 </span>
               </h1>
 
-              <p className="text-lg sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
-                Especialistas em mudanças e içamentos residenciais, comerciais e interestaduais. Sua
+              <p className="text-xl sm:text-xl text-slate-300 leading-relaxed max-w-2xl">
+                Especialistas em mudanças 
+                e içamentos residenciais, comerciais e interestaduais. Sua
                 mudança com{' '}
                 <strong className="text-white">segurança, agilidade e tranquilidade</strong> em todo o
                 Brasil.
               </p>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-24 py-6">
-              <div className="flex items-center gap-3 text-slate-300 group">
-                <div className="p-2 bg-emerald-500/20 rounded-lg backdrop-blur-sm border border-emerald-400/20 group-hover:bg-emerald-500/30 transition-colors">
-                  <Shield className="h-6 w-6 text-emerald-400 flex-shrink-0" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Segurança</h3>
-                  <p className="text-sm text-slate-400">Total proteção</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-slate-300 group">
-                <div className="p-2 bg-blue-500/20 rounded-lg backdrop-blur-sm border border-blue-400/20 group-hover:bg-blue-500/30 transition-colors">
-                  <Clock className="h-6 w-6 text-blue-400 flex-shrink-0" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Agilidade</h3>
-                  <p className="text-sm text-slate-400">Rapidez garantida</p>
-                </div>
-              </div>
-              <div className="flex items-center gap-3 text-slate-300 group">
-                <div className="p-2 bg-purple-500/20 rounded-lg backdrop-blur-sm border border-purple-400/20 group-hover:bg-purple-500/30 transition-colors">
-                  <Users className="h-6 w-6 text-purple-400 flex-shrink-0" aria-hidden="true" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-white">Experiência</h3>
-                  <p className="text-sm text-slate-400">Equipe qualificada</p>
-                </div>
-              </div>
-            </div>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
               <button
@@ -154,7 +126,7 @@ Tipo: ${formData.tipo}`;
                 className="bg-gradient-to-r from-emerald-500 to-emerald-600 hover:from-emerald-600 hover:to-emerald-700 text-white px-8 py-4 rounded-xl font-semibold text-lg flex items-center justify-center gap-2 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-emerald-500/25 focus:outline-none focus:ring-2 focus:ring-emerald-400 focus:ring-offset-2 focus:ring-offset-slate-900"
                 aria-label="Solicitar orçamento gratuito"
               >
-                Solicitar Orçamento Grátis
+                Vamos Conversar ?
                 <ArrowRight className="h-5 w-5" aria-hidden="true" />
               </button>
             </div>

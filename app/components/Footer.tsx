@@ -39,7 +39,7 @@ export function Footer() {
               href="https://schemadev.com.br"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-400 hover:text-blue-300 transition"
+              className="text-blue-600 hover:text-blue-300 transition"
             >
               Schema Desenvolvimento
             </a>

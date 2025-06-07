@@ -72,28 +72,21 @@ const Header = () => {
             isScrolled ? 'py-2 sm:py-3' : 'py-3 sm:py-4 lg:py-5'
           }`}>
             
-            <Link 
+           <Link 
               href="/" 
-              className="flex items-center gap-2 sm:gap-3 group flex-shrink-0 min-w-0"
+              className="flex items-center gap-3 group flex-shrink-0 min-w-0"
               aria-label="GETAF Mudanças - Ir para página inicial"
             >
               <div className={`${
                 isScrolled ? 'w-9 h-9 sm:w-10 sm:h-10' : 'w-10 h-10 sm:w-12 sm:h-12'
-              } bg-gradient-to-br from-blue-900 to-blue-700 rounded-xl flex items-center justify-center transform group-hover:scale-105 transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg`}>
-                <span className={`text-white font-bold ${
-                  isScrolled ? 'text-base sm:text-lg' : 'text-lg sm:text-xl'
-                } transition-all duration-300`}>G</span>
+              } flex items-center justify-center transform group-hover:scale-105 transition-all duration-200 focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 shadow-lg`}>
+                <img 
+                  src="/logogetaf.png" 
+                  alt="Logo GETAF"
+                  className="w-44 h-44 sm:w-32 sm:h-32 object-contain"
+                />
               </div>
-              <div className="min-w-0 flex-1">
-                <h1 className={`font-bold text-slate-900 group-hover:text-blue-900 transition-colors truncate ${
-                  isScrolled ? 'text-lg sm:text-xl' : 'text-xl sm:text-2xl'
-                }`}>
-                  GETAF
-                </h1>
-                <p className={`text-slate-600 -mt-0.5 truncate ${
-                  isScrolled ? 'text-xs' : 'text-xs sm:text-sm'
-                }`}>Mudanças</p>
-              </div>
+
             </Link>
 
             <div className="hidden lg:flex items-center justify-center flex-1 max-w-2xl mx-8">
@@ -112,44 +105,46 @@ const Header = () => {
             </div>
 
             <div className="hidden lg:flex items-center gap-2 xl:gap-4 flex-shrink-0">
-              <Link
-                href="tel:+5531986453365"
-                className="flex items-center gap-2 text-slate-700 hover:text-blue-900 transition-all duration-200 py-2 px-3 xl:px-4 rounded-lg hover:bg-slate-50/70 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group"
-                aria-label="Ligar para (31) 98645-3365"
-              >
-                <Phone className="w-4 h-4 flex-shrink-0 group-hover:scale-110 transition-transform" aria-hidden="true" />
-                <span className="font-medium text-sm xl:text-base whitespace-nowrap">(31) 98645-3365</span>
-              </Link>
-              <Link
-                href="#orcamento"
-                className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white px-4 xl:px-6 py-2.5 xl:py-3 rounded-xl font-semibold hover:from-blue-800 hover:via-blue-700 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 whitespace-nowrap text-sm xl:text-base"
-              >
-                Orçamento Grátis
-              </Link>
-            </div>
-
-            <button
-              onClick={toggleMenu}
-              className="lg:hidden p-2.5 rounded-xl hover:bg-slate-100 active:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex-shrink-0"
-              aria-label={isMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
-              aria-expanded={isMenuOpen}
-              aria-controls="mobile-menu"
+            <Link
+              href="tel:+5531986453365"
+              className="flex items-center gap-2 text-slate-700 hover:text-blue-900 transition-all duration-200 py-2 px-3 xl:px-4 rounded-lg hover:bg-slate-50/70 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 group"
+              aria-label="Ligar para (31) 98645-3365"
             >
-              <div className="relative w-6 h-6">
-                <Menu 
-                  className={`w-6 h-6 text-slate-700 absolute inset-0 transition-all duration-200 ${
-                    isMenuOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'
-                  }`} 
-                  aria-hidden="true" 
-                />
-                <X 
-                  className={`w-6 h-6 text-slate-700 absolute inset-0 transition-all duration-200 ${
-                    isMenuOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'
-                  }`} 
-                  aria-hidden="true" 
-                />
-              </div>
-            </button>
+              <Phone className="w-4 h-4 flex-shrink-0 group-hover:scale-110 transition-transform" aria-hidden="true" />
+              <span className="font-medium text-sm xl:text-base whitespace-nowrap">(31) 98645-3365</span>
+            </Link>
+            <Link
+              href="https://wa.me/5531986453365?text=Olá%2C%20gostaria%20de%20solicitar%20um%20orçamento!"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-gradient-to-r from-blue-900 via-blue-800 to-blue-700 text-white px-4 xl:px-6 py-2.5 xl:py-3 rounded-xl font-semibold hover:from-blue-800 hover:via-blue-700 hover:to-blue-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 whitespace-nowrap text-sm xl:text-base"
+            >
+              Orçamento 
+            </Link>
+          </div>
+
+          <button
+            onClick={toggleMenu}
+            className="lg:hidden p-2.5 rounded-xl hover:bg-slate-100 active:bg-slate-200 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 flex-shrink-0"
+            aria-label={isMenuOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"}
+            aria-expanded={isMenuOpen}
+            aria-controls="mobile-menu"
+          >
+            <div className="relative w-6 h-6">
+              <Menu 
+                className={`w-6 h-6 text-slate-700 absolute inset-0 transition-all duration-200 ${
+                  isMenuOpen ? 'rotate-90 opacity-0' : 'rotate-0 opacity-100'
+                }`} 
+                aria-hidden="true" 
+              />
+              <X 
+                className={`w-6 h-6 text-slate-700 absolute inset-0 transition-all duration-200 ${
+                  isMenuOpen ? 'rotate-0 opacity-100' : '-rotate-90 opacity-0'
+                }`} 
+                aria-hidden="true" 
+              />
+            </div>
+          </button>
           </div>
 
           <div 
@@ -163,7 +158,6 @@ const Header = () => {
           >
             <div className="container mx-auto px-3 sm:px-4 py-4 max-h-[calc(100vh-80px)] overflow-y-auto">
               <div className="flex flex-col">
-                {/* Links de navegação */}
                 <div className="space-y-1 mb-6">
                   {navItems.map((item, index) => (
                     <Link

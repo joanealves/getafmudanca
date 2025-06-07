@@ -58,7 +58,7 @@ export default function About() {
           <div className="space-y-6 animate-slide-up">
             <div className="prose prose-lg max-w-none">
               <p className="text-slate-700 leading-relaxed mb-6">
-                A <strong className="text-blue-600">GETAF Mudanças</strong> realiza mudanças e içamentos, há mais de 10 anos e possui vasta experiência no mercado. Acreditamos que o serviço de mudança vai muito além de transportar objetos - <strong>a tranquilidade do cliente está no topo de nossa prioridade</strong>.
+                A <strong className="text-blue-900">GETAF Mudanças</strong> realiza mudanças e içamentos, há mais de 10 anos e possui vasta experiência no mercado. Acreditamos que o serviço de mudança vai muito além de transportar objetos - <strong>a tranquilidade do cliente está no topo de nossa prioridade</strong>.
               </p>
               
               <p className="text-slate-700 leading-relaxed mb-6">

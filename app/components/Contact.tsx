@@ -57,13 +57,13 @@ export function Contact() {
         <div className="text-center mb-12 md:mb-16">
           <h2 
             id="contact-heading"
-            className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6"
+            className="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-900 mb-4 md:mb-6"
           >
-            Entre em <span className="text-indigo-600">Contato</span>
+            Entre em <span className="text-blue-900">Contato</span>
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Estamos prontos para atender você com excelência. 
-            Entre em contato conosco e solicite seu orçamento gratuito.
+            Entre em contato conosco e solicite seu orçamento.
           </p>
         </div>
 
@@ -85,7 +85,7 @@ export function Contact() {
                     aria-label={`${item.title}: ${item.info}`}
                   >
                     <div className="flex-shrink-0 w-10 h-10 bg-indigo-100 rounded-lg flex items-center justify-center group-hover:bg-indigo-200 transition-colors duration-300">
-                      <Icon className="h-5 w-5 text-indigo-600" />
+                      <Icon className="h-5 w-5 text-blue-900" />
                     </div>
                     <div className="ml-4 min-w-0 flex-1">
                       <h4 className="text-base font-medium text-gray-900 mb-1">{item.title}</h4>
@@ -98,18 +98,8 @@ export function Contact() {
 
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="flex items-start p-4 bg-gray-50 rounded-lg">
-                <div className="flex-shrink-0 w-8 h-8 bg-green-100 rounded-lg flex items-center justify-center">
-                  <Clock className="h-4 w-4 text-green-600" />
-                </div>
-                <div className="ml-3">
-                  <h4 className="text-sm font-medium text-gray-900 mb-1">Horário</h4>
-                  <p className="text-xs text-gray-600">Seg-Sáb: 8h-18h</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start p-4 bg-gray-50 rounded-lg">
                 <div className="flex-shrink-0 w-8 h-8 bg-blue-100 rounded-lg flex items-center justify-center">
-                  <Award className="h-4 w-4 text-blue-600" />
+                  <Award className="h-4 w-4 text-blue-900" />
                 </div>
                 <div className="ml-3">
                   <h4 className="text-sm font-medium text-gray-900 mb-1">Experiência</h4>
@@ -141,21 +131,10 @@ export function Contact() {
           </div>
 
           <div className="space-y-6">
-            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-8 min-h-[300px] md:min-h-[400px] flex items-center justify-center">
+            <div className="bg-gradient-to-br from-indigo-50 to-blue-50 rounded-xl p-4  flex items-center justify-center">
               <div className="text-center">
-                <div className="w-16 h-16 bg-indigo-200 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <MessageCircle className="h-8 w-8 text-indigo-600" />
-                </div>
-                <h3 className="text-lg font-bold text-gray-900 mb-3">
-                  Mudanças Seguras
-                </h3>
-                <p className="text-gray-600 text-sm max-w-xs mx-auto">
-                  Equipe especializada para tornar sua mudança tranquila e segura.
-                </p>
-                
-                
                 <img 
-                  src="/logo.png" 
+                  src="/comercial.jpg" 
                   alt="Equipe Getaf Mudanças realizando mudança residencial em Belo Horizonte" 
                   className="w-full h-full object-cover rounded-lg"
                   width="400"
